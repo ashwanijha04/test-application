@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Counter } from './components/Counter';
+import { Header } from './components/Header';
+import CabBookingComponent from './components/CabBookingComponent';
+// import { HelloWorldComponent } from './components/HelloWorldComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <CabBookingComponent/>
   </React.StrictMode>
 );
 
