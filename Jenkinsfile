@@ -1,6 +1,6 @@
 node {
      stage("Build") {
-       sh 'docker build . -t test-application'
+       sh 'docker build -t test-application .'
        sh 'docker image list'
 
     }
