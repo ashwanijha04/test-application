@@ -1,6 +1,7 @@
 node {
      stage("Build") {
        sh 'pwd'
+       sh 'cd /Users/ashwajha/Desktop/test-react-app'
        sh 'docker build -t test-application .'
        sh 'docker image list'
        // Push Docker Hub
